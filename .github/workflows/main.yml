@@ -18,4 +18,4 @@ jobs:
           cd /home/ec2-user/github-action-ci-cd
           npm i
           npm run test
-          pm2 restart deafult
+          pm2 restart index
