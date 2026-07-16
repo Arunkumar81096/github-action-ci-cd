@@ -14,8 +14,8 @@ jobs:
 
       - name: Deploy
         run: |
-          rsync -av --delete ./ /home/ubuntu/github-action-ci-cd/
-          cd /home/ubuntu/github-action-ci-cd
+          rsync -av --delete ./ /home/ec2-user/github-action-ci-cd/
+          cd /home/ec2-user/github-action-ci-cd
           npm i
           npm run test
           pm2 restart backend-prod
